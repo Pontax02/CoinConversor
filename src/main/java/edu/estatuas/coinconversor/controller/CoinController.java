@@ -20,8 +20,13 @@ public class CoinController {
 
     @GetMapping("/")
     public  String greeting() {
+        return "login";
+    }
+    @GetMapping("/login")
+    public  String greeting2() {
         return "conversor";
     }
+
     @PostMapping("/cambio")
     public String realizarCambio(
             @RequestParam String origen,
